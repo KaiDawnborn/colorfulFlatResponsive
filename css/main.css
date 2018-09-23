@@ -1,0 +1,633 @@
+/* CSS = Cascading Stylesheets */
+/*
+
+CSS Selector {
+	property: value;
+}
+
+-----*/
+/*base styles*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Suez One', serif;
+}
+section {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+.wrap {
+	width: 60%;
+}
+h1, h2, div p {
+	margin: 5px 15px;
+}
+h1 {
+	margin: 10px 20px;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: white;
+	font-weight: lighter;
+}
+h2 {
+	font-size: 1.25em;
+}
+p {
+	max-width: 400px;
+	margin: auto;
+}
+div {
+	display: inline-block;
+	width: 20%;
+	margin: 50px 25px;
+	text-align: center;
+}
+img {
+	width: 100%;
+	margin: 0;
+	vertical-align: middle;
+}
+button {
+	display: block;
+	padding: 15px;
+	margin: 50px auto;
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	font-family: 'Suez One', serif;
+	transition: .5s ease;
+}
+button:hover {
+	padding: 25px;
+}
+li {
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 5px;
+	transition: .5s ease;
+}
+a {
+	transition: .5s ease;
+}
+i {
+	border-radius: 50%;
+	padding: 5px;
+	height: 15px;
+	width: 15px;
+	margin: 15px 5px;
+	transition: .5s ease;
+}
+i:hover {
+	padding: 10px;
+}
+hr {
+	margin: 25px auto;
+	width: 60%;
+}
+/*styling the nav bar*/
+nav {
+	margin: 0;
+	text-align: center;
+}
+nav ul {
+	padding: 10px 0;
+	margin: 0 0 20px;
+}
+nav li {
+	color: #333;
+}
+nav li.left {
+	padding: 6px 0;
+	text-transform: uppercase;
+}
+nav li#name {
+	margin-right: 5%;
+}
+nav a li:hover {
+	background-color: grey;
+	color: white;
+}
+/*styling the 'awesome' section*/
+#awesome {
+	background-color: skyblue;
+}
+#menuToggle input {
+	display: none;
+}
+#awesome div {
+	width: 60%;
+	margin: auto;
+}
+#awesome h1 {
+	display: inline-block;
+	width: 275px;
+	font-size: 2rem;
+}
+#awesome #monitor {
+	display: inline-block;
+	width: 250px;
+}
+#awesome #tablet, #awesome #phone {
+	display: none;
+	width: 150px;
+	margin: auto;
+}
+#awesome #phone {
+	margin-left: -10px;
+}
+#circles {
+	display: block;
+	text-align: center;
+}
+#circles ul {
+	padding: 0;
+}
+#circles li {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+	margin: 0 3px;
+}
+#circles li:hover {
+	background-color: white;
+}
+/*styling the 'features' section*/
+#features {
+	text-align: center;
+}
+#features img {
+	height: 75px;
+	width: initial;
+}
+/*styling the 'works' section*/
+#works {
+	background-color: mediumaquamarine;
+	color: white;
+}
+#works ul {
+	margin: 50px 0;
+}
+#works li {
+	padding: 5px 15px;
+}
+#works a {
+	color: white;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0);
+	border-radius: 5px;
+	padding: 5px 0;
+}
+#works a:hover {
+	border-color: white;
+}
+#works a:active {
+	border-color: white;
+	background-color: white;
+	color: grey;
+}
+#works .art {
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+	background-size: cover;
+	background-position: bottom;
+	overflow: hidden;
+	margin: 10px 20px;
+	opacity: 0.8;
+	transition: .5s ease;
+}
+#works .art:hover {
+	opacity: 1;
+}
+#art1 {
+	background-image: url(../img/art1.jpg);
+}
+#art2 {
+	background-image: url(../img/art2.jpg);
+}
+#art3 {
+	background-image: url(../img/art3.jpg);
+}
+#art4 {
+	background-image: url(../img/art4.jpg);
+}
+#art5 {
+	background-image: url(../img/art5.jpg);
+}
+#art6 {
+	background-image: url(../img/art6.jpg);
+}
+#works button {
+	color: grey;
+}
+/*styling the 'layered' section*/
+#layered {
+	background-color: #eee;
+}
+#layered h1 {
+	color: black;
+}
+#layered img {
+	width: initial;
+}
+#layered img, div {
+	display: inline-block;
+	margin: 25px 15px;
+	vertical-align: top;
+}
+#layered div {
+	text-align: left;
+	width: 500px;
+}
+#layered button {
+	color: white;
+}
+.green {
+	background-color: mediumaquamarine;
+	margin: 50px 15px;
+}
+.blue {
+	background-color: skyblue;
+	margin: 50px 15px;
+}
+/*styling the 'team' section*/
+#team {
+	background-color: lightcoral;
+	color: white;
+}
+#team div {
+	background-color: white;
+	color: black;
+}
+#team h1, #team h2, #team div p {
+	margin: 5px 15px;
+}
+#team div h1 {
+	color: black;
+}
+#team i {
+	color: white;
+}
+#team .fa-facebook-f {
+	background-color: royalblue;
+}
+#team .fa-twitter {
+	background-color: lightblue;
+}
+#team .fa-pinterest-p {
+	background-color: red;
+}
+/*styling 'posts' section*/
+#posts {
+	background-color: skyblue;
+}
+#posts h1 {
+	color: black;
+}
+#posts div {
+	background-color: white;
+	color: black;
+}
+#posts h1, #posts h2, #posts div p {
+	margin: 5px 15px;
+}
+#posts div h1 {
+	font-size: 1.5em;
+}
+#posts div h2 {
+	font-style: italic;
+	font-size: 1em;
+}
+#posts button {
+	color: skyblue;
+}
+/*styling 'contact' section*/
+#contact {
+	color: white;
+	background-color: dimgrey;
+}
+#contact h1, #contact p {
+	margin: 5px auto;
+}
+#contact form {
+	margin: 50px 0;
+}
+#contact form input, #contact form textarea {
+	width: 50%;
+	display: block;
+	margin: 10px auto;
+	border-radius: 5px;
+	padding: 5px;
+	border: none;
+	font-size: 1em;
+	font-family: 'Suez One', serif;
+}
+#contact form input {
+	height: 25px;
+}
+#contact form textarea {
+	resize: none;
+}
+#contact button {
+	color: dimgrey;
+}
+#contact .wrap {
+	text-align: left;
+}
+#contact ul {
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	margin-right: 10%;
+}
+#contact li {
+	padding: 0;
+}
+#contact i {
+	background-color: grey;
+	height: 2em;
+	width: 2em;	
+}
+#contact .fab {
+	color: white;
+	line-height: 2em;
+}
+#contact span p {
+	font-size: .75em;
+	display: inline-block;
+}
+#contact p i {
+	background-color: initial;
+	height: initial;
+	width: initial;
+	margin: 0;
+	padding: 0;
+}
+#contact a {
+	color: gold;
+	text-decoration: none;
+}
+.vr {
+	display: inline-block;
+	width: 1px;
+	height: 15px;
+	margin: 0 10px;
+	border: none;
+	border-right: 1px solid white;
+	vertical-align: middle;
+}
+/*responsive rules*/
+/*mid-size*/
+@media (max-width: 1140px) {
+	.wrap {
+		width: 80%
+	}
+	/*styling the nav at mid screen*/
+	nav li.left {
+		padding: 2px;
+		display: block;
+		font-size: 0.75rem;
+	}
+	nav li#name {
+		margin-right: 0;
+	}
+	#heart {
+		height: 30px;
+	}
+	nav ul {
+		width: 90%;
+		margin: 10px auto;
+	}
+	nav a li {
+		width: 15%;
+		font-size: 1rem;
+		padding: 1px;
+	}
+	nav a li:hover {
+		background-color: grey;
+		color: white;
+	}
+	/*styling the 'awesome' section at mid screen*/
+	#awesome #monitor {
+		display: none;
+	}
+	#awesome #tablet {
+		display: block;
+	}
+	#awesome h1 {
+		margin-bottom: 50px: 
+	}
+	#awesome div {
+		width: 90%;
+	}
+	/*styling the 'features' section at mid screen*/
+	#features p {
+		display: none;
+	}
+	#features div h2 {
+		font-size: 1.1rem;
+	}
+	#features div {
+		width: 25%;
+	}
+	#features div.wrap {
+		width: 80%;
+	}
+	/*styling the 'works' section at mid screen*/
+	#works ul {
+		padding: 0;
+		margin: 10px auto;
+	}
+	#works .wrap {
+		margin: 10px auto;
+		width: 90%;
+	}
+	#works .art {
+		width: 50%;
+		height: 250px;
+	}
+	#works #art4.art {
+		display: none;
+	}
+	#works #art5.art {
+		display: none;
+	}
+	#works #art6.art {
+		display: none;
+	}
+	/*styling the 'layered' section at mid screen*/
+	#layered img {
+		width: 175px;
+		display: block;
+		margin: auto;
+	}
+	#layered h1 {
+		font-size: 1.5rem;
+	}
+	#layered div {
+		width: 90%;
+		height: initial;
+		text-align: center;
+	}
+	#layered p {
+		margin: auto;
+	}
+	#layered button {
+		margin: 15px auto;
+	}
+	#layered hr {
+		margin: auto;
+	}
+	/*styling the 'contact' section at mid screen*/
+	#contact ul {
+		display: block;
+		margin: auto;
+	}
+	#contact span {
+		display: block;
+		text-align: center;
+	}
+}
+/*small-size*/
+@media (max-width: 675px) {
+	/*styling the nav bar at small screen*/
+		/*hamburger menu styles borrowed from https://codepen.io/erikterwan/pen/EVzeRP*/
+	#menuToggle {
+	  display: block;
+	  position: relative;
+	  top: 15px;
+	  left: 15px;
+	  z-index: 1;
+	  -webkit-user-select: none;
+	  user-select: none;
+	}
+	#menuToggle input {
+	  display: block;
+	  width: 40px;
+	  height: 32px;
+	  position: absolute;
+	  top: -7px;
+	  left: -5px;
+	  cursor: pointer;
+	  opacity: 0; /* hide this */
+	  z-index: 2; /* and place it over the hamburger */
+	  -webkit-touch-callout: none;
+	}
+	#menuToggle span {
+	  display: block;
+	  width: 33px;
+	  height: 4px;
+	  margin-bottom: 5px;
+	  position: relative;
+	  background: #333;
+	  border-radius: 3px;
+	  z-index: 1;
+	  transform-origin: 4px 0px;
+	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	              opacity 0.55s ease;
+	}
+	#menuToggle span:first-child {
+	  transform-origin: 0% 0%;
+	}
+	#menuToggle span:nth-last-child(2) {
+	  transform-origin: 0% 100%;
+	}
+	#menuToggle input:checked ~ span {
+	  opacity: 1;
+	  transform: rotate(45deg) translate(-2px, -1px);
+	}
+	#menuToggle input:checked ~ span:nth-last-child(3) {
+	  opacity: 0;
+	  transform: rotate(0deg) scale(0.2, 0.2);
+	}
+	#menuToggle input:checked ~ span:nth-last-child(2) {
+	  transform: rotate(-45deg) translate(0, -1px);
+	}
+	#menu {
+	  position: absolute;
+	  width: 300px;
+	  height: 320px;
+	  margin: -100px 0 0 -50px;
+	  padding: 20px;
+	  padding-top: 100px;
+	  background: mediumaquamarine;
+	  list-style-type: none;
+	  -webkit-font-smoothing: antialiased;
+	  /* to stop flickering of text in safari */
+	  transform-origin: 0% 0%;
+	  transform: translate(-100%, 0);
+	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+	#menu li {
+	  padding: 10px 10px;
+	  font-size: 22px;
+	  display: block;
+	}
+	#menu li.left {
+		display: none;
+	}
+	#menuToggle input:checked ~ ul {
+	  transform: none;
+	}
+	nav a {
+		text-decoration: none;
+		text-align: right;
+	}
+	/*styling the 'awesome' section at small screen*/
+	#awesome #tablet {
+		display: none;
+	}
+	#awesome #phone {
+		display: inline-block;
+	}
+	#awesome div {
+		width: 95%;
+	}
+	#awesome h1 {
+		font-size: 1.75rem;
+		display: block;
+		margin: 50px auto 10px;
+	}
+	/*styling the 'features' section at small screen*/
+	#features div {
+		display: block;
+		width: initial;
+		margin: 10px auto;
+	}
+	/*styling the 'works' section at small screen */
+	#works li {
+		margin: 10px 0;
+		padding: 2px 15px;
+		width: 25%;
+	}
+	#works p {
+		display: none;
+	}
+	#works .art {
+		width: 90%;
+		height: 250px;
+		opacity: 1;
+	}
+	#works #art2.art {
+		display: none;
+	}
+	#works #art3.art {
+		display: none;
+	}
+	/*styling the 'layered' section at small screen*/
+	#layered img {
+		display: none;
+	}
+	/*styling the 'contact' section at small screen*/
+	#contact span p {
+		display: block;
+	}
+	#contact li {
+		margin: 0 12%;
+	}
+	.vr {
+		display: none;
+	}
+}
