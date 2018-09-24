@@ -479,6 +479,40 @@ nav a li:hover {
 	#layered hr {
 		margin: auto;
 	}
+	/*styling the 'team' section at mid screen*/
+	#team .wrap {
+		width: 90%;
+	}
+	#team div {
+		width: 25%;
+	}
+	#team div h1 {
+		font-size: 1.2rem;
+	}
+	#team div h2 {
+		font-size: 1rem;
+	}
+	#team div p {
+		margin: auto;
+		padding: 5px;
+	}
+	/*styling the 'posts' section at mid screen*/
+	#posts .wrap {
+		width: 90%;
+	}
+	#posts div {
+		width: 25%;
+	}
+	#posts div h1 {
+		font-size: 1.2rem;
+	}
+	#posts div h2 {
+		font-size: 1rem;
+	}
+	#posts div p {
+		margin: auto;
+		padding: 5px;
+	}
 	/*styling the 'contact' section at mid screen*/
 	#contact ul {
 		display: block;
@@ -620,12 +654,48 @@ nav a li:hover {
 	#layered img {
 		display: none;
 	}
+	/*styling the 'team' section at small screen*/
+	#team p {
+		display: none;
+	}
+	#team div {
+		width: 60%;
+	}
+	#team div p {
+		display: none;
+	}
+	/*styling the 'posts' section at small screen*/
+	#posts p {
+		display: none;
+	}
+	#posts div {
+		width: 60%;
+	}
+	#posts div p {
+		display: none;
+	}
 	/*styling the 'contact' section at small screen*/
 	#contact span p {
 		display: block;
 	}
-	#contact li {
-		margin: 0 12%;
+	#contact ul {
+		text-align: center;
+	}
+	#contact i {
+	height: 1em;
+	width: 1em;	
+	}
+	#contact .fab {
+		line-height: 1em;
+	}
+	#contact hr {
+		display: none;
+	}
+	#contact button {
+		margin: 10px auto;
+	}
+	#contact div.wrap {
+		margin: 10px auto; 
 	}
 	.vr {
 		display: none;
