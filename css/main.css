@@ -149,6 +149,9 @@ nav a li:hover {
 	padding: 5px;
 	margin: 0 3px;
 }
+#circles #circles3 {
+	background-color: white;
+}
 #circles li:hover {
 	background-color: white;
 }
@@ -421,6 +424,12 @@ nav a li:hover {
 	#awesome div {
 		width: 90%;
 	}
+	#circles #circles3 {
+	background-color: rgba(0, 0, 0, 0);
+	}
+	#circles #circles2 {
+	background-color: white;
+	}
 	/*styling the 'features' section at mid screen*/
 	#features p {
 		display: none;
@@ -623,6 +632,12 @@ nav a li:hover {
 		font-size: 1.75rem;
 		display: block;
 		margin: 50px auto 10px;
+	}
+	#circles #circles2 {
+	background-color: rgba(0, 0, 0, 0);
+	}
+	#circles #circles1 {
+	background-color: white;
 	}
 	/*styling the 'features' section at small screen*/
 	#features div {
